@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="./all.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./brands.min.css">
+    <link rel="stylesheet" href="./brands.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Edu+TAS+Beginner:wght@400;500;600;700&family=Ephesis&family=Gloria+Hallelujah&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yusei+Magic&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Caveat', cursive;
+            font-family: 'Edu TAS Beginner', cursive;
+            font-family: 'Ephesis', cursive;
+            font-family: 'Gloria Hallelujah', cursive;
+            font-family: 'Inconsolata', monospace;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Kalam', cursive;
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Playpen Sans', cursive;
+            font-family: 'Rubik', sans-serif;
+            font-family: 'Work Sans', sans-serif;
+            font-family: 'Yusei Magic', sans-serif;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            background-color: #000;
+            overflow:hidden ;
+        }
+        .conter{
+            display: flex;
+            width: 95%;
+            height: 95%;
+            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+            border-radius: 25px;
+
+        }
+        .wc1{
+            flex-direction: column;
+        }
+        .conter_img{
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: end;
+        }
+        .im1{
+            margin-top: 50px;
+            height: 340px;
+            width: 340px;
+            margin-right: 50px;
+            animation: x infinite forwards 2s alternate;
+        }
+        @keyframes x {
+            from{
+                transform: translate(0,10px);
+            }
+            to{
+                transform: translate(0,-10px);
+            }
+            
+        }
+        .div_bar{
+            height: 100%;
+            width: 140px;
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+        }
+        ul li{
+            display: flex;
+            justify-content: center;
+            text-transform: capitalize;
+            border-radius: 10px;
+            padding: 5px;
+        }
+        ul li:hover{
+            background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+            transition: 1s;
+        }
+        .h3_span {
+            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @media (max-width:1080px) {
+            .im1{
+                margin-top: 50px;
+                height: 280px;
+                width: 280px;
+                margin-right: 50px;
+            }
+        }
+        .div_icon{
+            width: 90%;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);  
+            transition: 0.5s;
+        }
+        .div_icon:hover{
+            width: 100%;
+        }
+        a{
+            z-index: 99999999999999999;
+        }
+        a:hover{
+            cursor: pointer;
+        }
+        .bars{
+            color: #fff;
+            display: none;
+        }
+        @media (max-width:1040px) {
+            .im1{
+                height: 300px;
+                width: 300px;
+            }
+            .div_bar{
+                height: 100%;
+                width: 120px;
+                background-color: aliceblue;
+                display: flex;
+                justify-content: center;
+                align-items: end;
+            }
+        }
+        @media (max-width:1020px) {
+            .im1{
+                height: 300px;
+                width: 300px;
+                position: absolute;
+                right: -40px;
+                top: 50px;
+            }
+            .div_bar{
+            display:none ;
+            }
+            .bars{
+                color: #fff;
+                display: block;
+            }
+            .wc1{
+                width: 70%;
+            }
+        }
+        @media (max-width:784px) {
+            .im1{
+                height: 250px;
+                width: 250px;
+                position: absolute;
+                right: -40px;
+                top: 100px;
+            }
+            .div_bar{
+            display:none ;
+            }
+            .bars{
+                color: #fff;
+                display: block;
+            }
+            .wc1{
+                width: 70%;
+            }
+        }
+        .conter_img{
+        }
+        @media (max-width:600px) {
+            .im1{
+                height: 200px;
+                width: 200px;
+                position: absolute;
+                right: -40px;
+                top: 100px;
+            }
+            .wc1 h2{
+                font-size: 23px;
+            }
+        }
+        @media (max-width:624px) {
+            .im1{
+                height: 200px;
+                width: 200px;
+                position: absolute;
+                right: -40px;
+                top: 100px;
+            }
+            .wc1 h2{
+                font-size: 23px;
+            }
+            .wc1 h3:first-of-type{
+                font-size: 20px;
+            }
+            .wc1 h3:last-of-type{
+                letter-spacing: 2px;
+                margin-top: 20px;
+            }
+        }
+        @media (max-width:524px) {
+            .wc1{
+                width: 80%;
+            }
+            .im1{
+                height: 180px;
+                width: 180px;
+                position: absolute;
+                right: -40px;
+                top: 100px;
+            }
+            .wc1 h3:first-of-type{
+                font-size: 18px;
+            }
+        }
+        @media (max-width:500px) {
+            .wc1{
+                width: 80%;
+            }
+            .wc1 h3:first-of-type{
+                font-size: 18px;
+            }
+            .im1{
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                right: -40px;
+                top: 100px;
+            }
+        }
+        @media (min-width:200px) and (max-width:500px) {
+            .wc1{
+                width: 100%;
+            }
+            .wc1 h3:first-of-type{
+                font-size: 15px;
+            }
+            .conter_img{
+                position: absolute;
+                right: 0;
+            }
+            .im1{
+                height: 150px;
+                width: 150px;
+                position: absolute;
+                right: -40px;
+                top: 70px;
+            }
+
+        }
+        @media (max-width:368px) {
+            .wc1 h3:last-of-type{
+                font-size: 15px;
+                margin-top: 20px;
+            }
+        }
+        @media (max-width:360px) {
+            .wc1 h3:last-of-type{
+                font-size: 13px;
+                margin-top: 20px;
+            }
+            .wc1 h3:first-of-type{
+                font-size: 15px;
+                margin-top: 10px;
+                width: 70%;
+            }
+            .wc1 h2{
+                font-size: 15px;
+            }
+        }
+        @media (min-width:1020px) and (max-width:1060px) {
+            .wc1 h3:last-of-type{
+                font-size: 17px;
+                margin-top: 20px;
+            }
+        }
+        @media (min-width:400px) and (max-width:607px) {
+            .wc1 h3:last-of-type{
+                font-size: 17px;
+                letter-spacing: 0px;
+                margin-top: 20px;
+            }
+            .div_icon{
+                margin-top: 4px;
+            }
+        }
+        @media (min-width:400px) and (max-width:784px) {
+            .wc1 h3:last-of-type{
+                font-size: 17px;
+                letter-spacing: 0px;
+                margin-top: 20px;
+            }
+            .div_icon{
+                margin-top: 24px;
+            }
+        }
+        @media (min-width:501px) and (max-width:590px) {
+            .wc1{
+                width: 100%;
+            }
+        }
+        @media (max-width:460px) {
+            .wc1 h2:first-of-type{
+                width: 60%;
+            }
+            .wc1 .paragraph{
+                font-size: 6px; 
+            }
+        }
+        @media (min-width:360px) and (max-width:400px) {
+            .wc1 h2:first-of-type{
+                width: 30%;
+            }
+            .wc1 h3{
+                width: 40%;
+            }
+            .wc1 .paragraph{
+                font-size: 13px;
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+        @media (min-width:400px) and (max-width:413px) {
+            .wc1 h2:first-of-type{
+            }
+            .wc1 h3{
+            }
+            .wc1 .paragraph{
+                font-size: 10px;
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        @media (min-width:462px) and (max-width:500px) {
+            .wc1 h3{
+                margin-top: 35px;
+            }
+        }
+        @media (max-width:356px){
+            .wc1 h3:first-of-type{
+                width: 40%;
+            }  
+        }
+        @media (max-width:315px){
+            .wc1 h3:first-of-type{
+                width: 40%;
+            }  
+            .wc1 h3:last-of-type{
+                font-size: 12px;
+            }
+        }
+        .barrs{
+            position: absolute;
+            width: 100%;
+            height: 100vh;
+            z-index: 99999999999999999;
+            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+                transform: translate(-2000px);
+                transition: 0.6s;
+                .x{
+                position: absolute;
+                right: 20px;
+                top: 0;
+                padding: 15px;
+                color: #fff;
+                font-size: 30px;
+                cursor: pointer;
+            }   
+            ul{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li{
+                    padding: 14px;
+                    letter-spacing: 2px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+        }
+        .paragraph{
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conter">
+        <div class="wc1 lg:w-1/2 md:w-1/2 p-10  sm:w-[100%]">
+            <h1 class="lg:text-[30px] sm:text-[20px] text-[20px] m-auto md:text-[30px] tracking-[3px] font-bold mt-10 text-white">Hello,it's Me </h1>
+            <h2 class="lg:text-[40px] md:text-[40px] sm:text-[30px] text-[30px] tracking-[3px] font-bold mt-10 text-white">Mohamed Hanafi
+                <br>
+                <h3 class="text-white mt-4 text-[20px]">And <span class="h3_span">i'm Front End Developer</span></h3>
+            </h2>
+            <h3 class="mt-10 paragraph lg:text-[20px] md:text-[20px] text-[15px] text-white">Hi, How are you today?
+                Thank you for visiting my humble portfolio. I hope you like it. Don’t forget to see my projects and remember, “Electricity is not just something to be manipulated, it is a living force for life itself.”</h3>
+            <div class="div_icon mt-10 rounded-lg">
+                <a href="https://www.facebook.com/prince.ieee.802.11"><button class="fa-brands fa-facebook lg:text-[25px] md:text-[25px] sm:text-[20px] text-[20px] text-sky-700 rounded-[50%] p-2 hover:cursor-pointer"></button></a>
+                <a href="https://wa.me/201025485845?text=Hello%0AI%20came%20from%20your%20portfolio"><button class="fa-brands fa-whatsapp lg:text-[25px] md:text-[25px]  sm:text-[20px] text-[20px] text-green-700 rounded-[50%] p-2 hover:cursor-pointer"></button></a>
+                <a href="tel:+201025485845"><button class="fa-solid fa-phone lg:text-[25px] md:text-[25px] bg- sm:text-[20px] text-[20px] rounded-[50%] p-2 text-teal-300 hover:cursor-pointer"></button></a>
+                <a href="mailto:princeyt8708@gmail.com"><button class="fa-solid fa-g lg:text-[25px] md:text-[25px] sm:text-[20px] text-[20px] text-red-500 rounded-[50%] p-2 hover:cursor-pointer"></button></a>
+            </div>
+        </div>
+        <div class="conter_img w-1/2">
+            <img class="im1 rounded-[50%] object-cover " src="./WhatsApp Image 2023-10-12 at 20.44.24_3a53d47f.jpg" alt="">
+            <button class="fa-solid bars fa-bars-staggered text-[25px] p-4 hover:cursor-pointer"></button>
+        </div>
+            <div class="div_bar w-1/7 rounded-lg">
+                <ul class="p-5 gap-3 font-[400] duration-300 tracking-[1px] flex flex-col">
+                    <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">Contect us</a></li>
+                    <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">Project</a></li>
+                    <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">information</a></li>
+                    <li class="hover:translate-y-[-10px] duration-300 font-bold hover:cursor-pointer text-cyan-600"><a href="">Home</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="barrs">
+        <ul class="p-5 gap-3 font-[400] duration-300 tracking-[1px] flex flex-col">
+            <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">Contect us</a></li>
+            <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">Project</a></li>
+            <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">information</a></li>
+            <li class="hover:translate-y-[-10px] duration-300 font-bold hover:cursor-pointer" style="color: #22C1C3;"><a href="">Home</a></li>
+    </ul>
+    <button class="fa-solid x fa-xmark"></button>    
+</div>
+</body>
+<script src="./all.js"></script>
+<script src="./brands.min.js"></script>
+<script src="./brands.js"></script>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="./index.js"></script>
+</html>
