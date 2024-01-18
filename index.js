@@ -1,10 +1,13 @@
-let bars = document.querySelector(".bars");
-let barrs = document.querySelector(".barrs");
-let x = document.querySelector(".x");
-
-bars.onclick = function(){
-    barrs.style.transform = "translate(0)"
-}
-x.onclick = function(){
-    barrs.style.transform = "translate(-2000px)"
-}
+let sun = document.querySelector(".sun");
+let light = 0;
+sun.addEventListener("click", function () {
+  if (light == 0) {
+    document.body.style.background = "#fff";
+    sun.style.color = "#000";
+    light = 1;
+  } else if (light == 1) {
+    document.body.style.background = "#000";
+    sun.style.color = "#fff";
+    light = 0;
+  }
+});

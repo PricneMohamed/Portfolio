@@ -10,433 +10,281 @@
     <link rel="stylesheet" href="./brands.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Edu+TAS+Beginner:wght@400;500;600;700&family=Ephesis&family=Gloria+Hallelujah&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playpen+Sans:wght@100;200;300;400;500;600;700;800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Yusei+Magic&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Portfolio </title>
     <style>
         *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Caveat', cursive;
-            font-family: 'Edu TAS Beginner', cursive;
-            font-family: 'Ephesis', cursive;
-            font-family: 'Gloria Hallelujah', cursive;
-            font-family: 'Inconsolata', monospace;
-            font-family: 'Josefin Sans', sans-serif;
-            font-family: 'Kalam', cursive;
-            font-family: 'Montserrat', sans-serif;
-            font-family: 'Open Sans', sans-serif;
-            font-family: 'Playpen Sans', cursive;
-            font-family: 'Rubik', sans-serif;
-            font-family: 'Work Sans', sans-serif;
-            font-family: 'Yusei Magic', sans-serif;
+            font-family: 'Familjen Grotesk', sans-serif;
+            font-family: 'Inter', sans-serif;
         }
         body{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(17, 17, 17);
+        }
+        ::selection{
+            background-color: #ffb400;
+        }
+        .c1{
+            background-color: #ffb400;
+            width: 20%;
+            height: 100%;
+            border-radius: 10px 115px  0 0;
+            position: relative;
+        }
+        .c1::after{
+            content:'';
+            background-color: aqua;
+            position: absolute;
+            width: 140%;
+            height: 80%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-30%,-50%);
+            background-image: url('./WhatsApp\ Image\ 2023-10-12\ at\ 20.44.24_3a53d47f.jpg');
+            background-position: center;
+            border-radius: 30px;
+        }
+        @media (max-width:1100px) {
+            .c1::after{
+                width: 180%;
+                margin-left: 40px;
+            }
+        }
+        .c2{
+            height: 90%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            width: 100%;
-            background-color: #000;
-            overflow:hidden ;
+            margin-top: 20px;
         }
-        .conter{
-            display: flex;
-            width: 95%;
-            height: 95%;
-            background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
-            border-radius: 25px;
-
+        .name{
+            color:#ffb400;
         }
-        .wc1{
-            flex-direction: column;
-        }
-        .conter_img{
+        .h1_name{
             position: relative;
-            height: 100%;
-            display: flex;
-            justify-content: end;
         }
-        .im1{
-            margin-top: 50px;
-            height: 340px;
-            width: 340px;
-            margin-right: 50px;
-            animation: x infinite forwards 2s alternate;
+        .h1_name::after{
+            content:'';
+            background-color: aqua;
+            position: absolute;
+            width: 40px;
+            height: 5px;
+            background-color: #ffb400;
+            position: absolute;
+            left: -10%;
+            top: 34px;
         }
-        @keyframes x {
-            from{
-                transform: translate(0,10px);
-            }
-            to{
-                transform: translate(0,-10px);
-            }
-            
-        }
-        .div_bar{
-            height: 100%;
-            width: 140px;
-            background-color: aliceblue;
-            display: flex;
-            justify-content: center;
-            align-items: end;
-        }
-        ul li{
-            display: flex;
-            justify-content: center;
-            text-transform: capitalize;
-            border-radius: 10px;
-            padding: 5px;
-        }
-        ul li:hover{
-            background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
-            transition: 1s;
-        }
-        .h3_span {
-            background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        @media (max-width:1080px) {
-            .im1{
-                margin-top: 50px;
-                height: 280px;
-                width: 280px;
-                margin-right: 50px;
-            }
-        }
-        .div_icon{
-            width: 90%;
-            padding: 10px;
-            display: flex;
-            justify-content: space-evenly;
-            background: linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%);  
-            transition: 0.5s;
-        }
-        .div_icon:hover{
-            width: 100%;
-        }
-        a{
-            z-index: 99999999999999999;
-        }
-        a:hover{
-            cursor: pointer;
-        }
-        .bars{
-            color: #fff;
-            display: none;
-        }
-        @media (max-width:1040px) {
-            .im1{
-                height: 300px;
-                width: 300px;
-            }
-            .div_bar{
-                height: 100%;
-                width: 120px;
-                background-color: aliceblue;
-                display: flex;
-                justify-content: center;
-                align-items: end;
-            }
-        }
-        @media (max-width:1020px) {
-            .im1{
-                height: 300px;
-                width: 300px;
-                position: absolute;
-                right: -40px;
-                top: 50px;
-            }
-            .div_bar{
-            display:none ;
-            }
-            .bars{
-                color: #fff;
-                display: block;
-            }
-            .wc1{
-                width: 70%;
-            }
-        }
-        @media (max-width:784px) {
-            .im1{
-                height: 250px;
-                width: 250px;
-                position: absolute;
-                right: -40px;
-                top: 100px;
-            }
-            .div_bar{
-            display:none ;
-            }
-            .bars{
-                color: #fff;
-                display: block;
-            }
-            .wc1{
-                width: 70%;
-            }
-        }
-        .conter_img{
-        }
-        @media (max-width:600px) {
-            .im1{
-                height: 200px;
-                width: 200px;
-                position: absolute;
-                right: -40px;
-                top: 100px;
-            }
-            .wc1 h2{
-                font-size: 23px;
-            }
-        }
-        @media (max-width:624px) {
-            .im1{
-                height: 200px;
-                width: 200px;
-                position: absolute;
-                right: -40px;
-                top: 100px;
-            }
-            .wc1 h2{
-                font-size: 23px;
-            }
-            .wc1 h3:first-of-type{
-                font-size: 20px;
-            }
-            .wc1 h3:last-of-type{
-                letter-spacing: 2px;
-                margin-top: 20px;
-            }
-        }
-        @media (max-width:524px) {
-            .wc1{
-                width: 80%;
-            }
-            .im1{
-                height: 180px;
-                width: 180px;
-                position: absolute;
-                right: -40px;
-                top: 100px;
-            }
-            .wc1 h3:first-of-type{
-                font-size: 18px;
-            }
-        }
-        @media (max-width:500px) {
-            .wc1{
-                width: 80%;
-            }
-            .wc1 h3:first-of-type{
-                font-size: 18px;
-            }
-            .im1{
-                height: 150px;
-                width: 150px;
-                position: absolute;
-                right: -40px;
-                top: 100px;
-            }
-        }
-        @media (min-width:200px) and (max-width:500px) {
-            .wc1{
-                width: 100%;
-            }
-            .wc1 h3:first-of-type{
-                font-size: 15px;
-            }
-            .conter_img{
-                position: absolute;
-                right: 0;
-            }
-            .im1{
-                height: 150px;
-                width: 150px;
-                position: absolute;
-                right: -40px;
-                top: 70px;
-            }
 
+        .about{
+            align-self: start;
+            display: flex;
+            justify-content: space-between;
+            border: 0.5px solid #ffb400;
+            position: relative;
+            overflow: hidden;
         }
-        @media (max-width:368px) {
-            .wc1 h3:last-of-type{
-                font-size: 15px;
-                margin-top: 20px;
-            }
-        }
-        @media (max-width:360px) {
-            .wc1 h3:last-of-type{
-                font-size: 13px;
-                margin-top: 20px;
-            }
-            .wc1 h3:first-of-type{
-                font-size: 15px;
-                margin-top: 10px;
-                width: 70%;
-            }
-            .wc1 h2{
-                font-size: 15px;
-            }
-        }
-        @media (min-width:1020px) and (max-width:1060px) {
-            .wc1 h3:last-of-type{
-                font-size: 17px;
-                margin-top: 20px;
-            }
-        }
-        @media (min-width:400px) and (max-width:607px) {
-            .wc1 h3:last-of-type{
-                font-size: 17px;
-                letter-spacing: 0px;
-                margin-top: 20px;
-            }
-            .div_icon{
-                margin-top: 4px;
-            }
-        }
-        @media (min-width:400px) and (max-width:784px) {
-            .wc1 h3:last-of-type{
-                font-size: 17px;
-                letter-spacing: 0px;
-                margin-top: 20px;
-            }
-            .div_icon{
-                margin-top: 24px;
-            }
-        }
-        @media (min-width:501px) and (max-width:590px) {
-            .wc1{
-                width: 100%;
-            }
-        }
-        @media (max-width:460px) {
-            .wc1 h2:first-of-type{
-                width: 60%;
-            }
-            .wc1 .paragraph{
-                font-size: 6px; 
-            }
-        }
-        @media (min-width:360px) and (max-width:400px) {
-            .wc1 h2:first-of-type{
-                width: 30%;
-            }
-            .wc1 h3{
-                width: 40%;
-            }
-            .wc1 .paragraph{
-                font-size: 13px;
-                width: 100%;
-                margin-top: 30px;
-            }
-        }
-        @media (min-width:400px) and (max-width:413px) {
-            .wc1 h2:first-of-type{
-            }
-            .wc1 h3{
-            }
-            .wc1 .paragraph{
-                font-size: 10px;
-                width: 100%;
-                margin-top: 10px;
-            }
-        }
-        @media (min-width:462px) and (max-width:500px) {
-            .wc1 h3{
-                margin-top: 35px;
-            }
-        }
-        @media (max-width:356px){
-            .wc1 h3:first-of-type{
-                width: 40%;
-            }  
-        }
-        @media (max-width:315px){
-            .wc1 h3:first-of-type{
-                width: 40%;
-            }  
-            .wc1 h3:last-of-type{
-                font-size: 12px;
-            }
-        }
-        .barrs{
+        .about::after{
+            content:'';
+            background-color: #ffb400;
             position: absolute;
             width: 100%;
-            height: 100vh;
-            z-index: 99999999999999999;
-            background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
-                transform: translate(-2000px);
-                transition: 0.6s;
-                .x{
-                position: absolute;
-                right: 20px;
-                top: 0;
-                padding: 15px;
-                color: #fff;
-                font-size: 30px;
-                cursor: pointer;
-            }   
-            ul{
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 40px;
+            transform: translate(145px);
+            z-index: -9999999;
+            transition: 0.4s;
+        }
+        .about:hover::after {
+            transform: translate(0px);
+        }
+        .arrow{
+            font-size: 22px;
+        }
+        .icon{
+            height: 80%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+        }
+        .a_icon{
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            transition: 0.3s;
+            position: relative;
+        }    
+        .a_icon::after {
+            content:attr(data-text);
+            position: absolute;
+            right: 80px;
+            color: #fff;
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.4s;
+            width: 150px;
+            text-align: center;
+            opacity: 0;
+        }
+        .a_icon:hover::after{
+            opacity: 1;
+        }
+        .a_icon:first-of-type{
+            background-color: #ffb400;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+        .ico2,.ico3,.ico4{
+            color: #eee;
+        }
+        @media (max-width:1450px) {
+            .h1_name{
+                font-size:30px ;
+            }
+            .h1_name::after{
+                top: 20px;
+                left: -15%;
+                width: 30px;
+            }
+    }
+        @media (max-width:1090px) {
+            .h1_name{
+                font-size:27px ;
+                margin-left: 20px;
                 width: 100%;
-                height: 100%;
+            }
+            .h1_name::after{
+                display: none;
+            }
+    }
+        @media (max-width:1000px) {
+            body{
+                flex-direction: column;
+                .a_icon::after {
+                    display: none;
+                    opacity: 0;
+            }
+            }
+
+            .c2{
+                flex-direction: column;
+            }
+            .icon{
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+            }
+            .c1{
+                width: 300px;
+                height: 400px;
+                border-radius: 50%;
+            }
+            .c1::after{
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+                left: 50%;
+                top: 50%;
+                transform: translate(-65%,-50%);
+                background-size: cover;
+            }
+            .conter_h2{
+                width: 100%;
+            }
+            .c2{
+                width: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                li{
-                    padding: 14px;
-                    letter-spacing: 2px;
-                    font-weight: bold;
-                    color: #fff;
+                flex-direction: column;
+                .content{
+                    height: auto;
+                    width: 70%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: auto;
+                    position: relative;
+                    padding: 20px;
+                    text-align: center;
+                    .a_link{
+                        margin: 2.5rem auto;
+                    }
+
+            }
+                .icon{
+                    justify-content: space-evenly;
                 }
             }
+    }
+    @media (max-width:710px) {
+        body{
+            height: auto;
         }
-        .paragraph{
-            margin-top: 30px;
+        .c1{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
         }
+    }
+    @media (max-width:450px) {
+        .h1_name{
+            font-size: 24px;
+        }
+        .conter_h2{
+            width: 150%;
+        }
+
+    }
+    .sun{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
     </style>
 </head>
 <body>
-    <div class="conter">
-        <div class="wc1 lg:w-1/2 md:w-1/2 p-10  sm:w-[100%]">
-            <h1 class="lg:text-[30px] sm:text-[20px] text-[20px] m-auto md:text-[30px] tracking-[3px] font-bold mt-10 text-white">Hello,it's Me </h1>
-            <h2 class="lg:text-[40px] md:text-[40px] sm:text-[30px] text-[30px] tracking-[3px] font-bold mt-10 text-white">Mohamed Hanafi
-                <br>
-                <h3 class="text-white mt-4 text-[20px]">And <span class="h3_span">i'm Front End Developer</span></h3>
+<div class="c1"></div>
+<div class="c2 w-1/2 mr-10">
+    <div class="content mr-32">
+        <h1 class="uppercase xl:text-[45px] lg:text-[40px] md:text-[35px] sm:[30px] font-bold text-white h1_name"><span class="name">I'M Mohamed Hanafi.</span> <br>
+            FRONT END DEVELOPER</h1>
+            <h2 class="text-white conter_h2 w-[70%] mt-10 text-[18px]">
+                I am an Egyptian front-end developer. I'm 19 years old. I study as a teacher at the
+                Advanced Military Technical School in Alexandria. Don't forget to see more of my work.
             </h2>
-            <h3 class="mt-10 paragraph lg:text-[20px] md:text-[20px] text-[15px] text-white">Hi, How are you today?
-                Thank you for visiting my humble portfolio. I hope you like it. Don’t forget to see my projects and remember, “Electricity is not just something to be manipulated, it is a living force for life itself.”</h3>
-            <div class="div_icon mt-10 rounded-lg">
-                <a href="https://www.facebook.com/prince.ieee.802.11"><button class="fa-brands fa-facebook lg:text-[25px] md:text-[25px] sm:text-[20px] text-[20px] text-sky-700 rounded-[50%] p-2 hover:cursor-pointer"></button></a>
-                <a href="https://wa.me/201025485845?text=Hello%0AI%20came%20from%20your%20portfolio"><button class="fa-brands fa-whatsapp lg:text-[25px] md:text-[25px]  sm:text-[20px] text-[20px] text-green-700 rounded-[50%] p-2 hover:cursor-pointer"></button></a>
-                <a href="tel:+201025485845"><button class="fa-solid fa-phone lg:text-[25px] md:text-[25px] bg- sm:text-[20px] text-[20px] rounded-[50%] p-2 text-teal-300 hover:cursor-pointer"></button></a>
-                <a href="mailto:princeyt8708@gmail.com"><button class="fa-solid fa-g lg:text-[25px] md:text-[25px] sm:text-[20px] text-[20px] text-red-500 rounded-[50%] p-2 hover:cursor-pointer"></button></a>
-            </div>
-        </div>
-        <div class="conter_img w-1/2">
-            <img class="im1 rounded-[50%] object-cover " src="./WhatsApp Image 2023-10-12 at 20.44.24_3a53d47f.jpg" alt="">
-            <button class="fa-solid bars fa-bars-staggered text-[25px] p-4 hover:cursor-pointer"></button>
-        </div>
-            <div class="div_bar w-1/7 rounded-lg">
-                <ul class="p-5 gap-3 font-[400] duration-300 tracking-[1px] flex flex-col">
-                    <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">Contect us</a></li>
-                    <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">Project</a></li>
-                    <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">information</a></li>
-                    <li class="hover:translate-y-[-10px] duration-300 font-bold hover:cursor-pointer text-cyan-600"><a href="">Home</a></li>
-            </ul>
-        </div>
+            <a href="https://github.com/PricneMohamed?tab=repositories" class="w-[200px] mt-10 ml-32 p-4 rounded-[40px] a_link about">
+                <button class="btn_about m-auto text-white uppercase tracking-[3px] font-bold">
+                    about me
+                </button>
+                <span class="fa-solid fa-arrow-right arrow  text-white w-[30px]  rounded-[50%] mr-[-6px]"></span>
+        </a>
     </div>
-    <div class="barrs">
-        <ul class="p-5 gap-3 font-[400] duration-300 tracking-[1px] flex flex-col">
-            <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">Contect us</a></li>
-            <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">Project</a></li>
-            <li class="hover:translate-y-[-10px] duration-300 hover:cursor-pointer hover:text-teal-400"><a href="">information</a></li>
-            <li class="hover:translate-y-[-10px] duration-300 font-bold hover:cursor-pointer" style="color: #22C1C3;"><a href="">Home</a></li>
-    </ul>
-    <button class="fa-solid x fa-xmark"></button>    
+    <div class="icon w-1/4">
+        <a href="./index.html" class="a_icon" data-text="HOME"><span class="fa-solid fa-house ico1 text-white ico"></span></a>
+        <a href="https://www.facebook.com/prince.ieee.802.11?mibextid=ZbWKwL" class="a_icon" data-text="facebook"><span class="fa-brands fa-facebook ico2 ico" ></span></a>
+        <a href="https://wa.me/201273059762" class="a_icon" data-text="Whats App"><span class="fa-brands fa-whatsapp ico3 ico" ></span></a>
+        <a href="tel:+201273059762" class="a_icon" data-text="Phone"><span class="fa-solid fa-phone ico4 ico" ></span></a>
+    </div>
 </div>
+<i class="bi bi-brightness-low-fill text-white text-[50px] sun cursor-pointer"></i>
 </body>
 <script src="./all.js"></script>
 <script src="./brands.min.js"></script>
