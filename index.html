@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./all.css">
     <link rel="stylesheet" href="./all.min.css">
     <link rel="stylesheet" href="./brands.min.css">
@@ -248,25 +247,93 @@
         .h1_name{
             font-size: 24px;
         }
-        .conter_h2{
-            width: 150%;
-        }
 
+        @media (max-width:1000px){
+            body{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .c1{
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 50%;
+                }
+                .c1::after{
+                    width: 250px;
+                    height: 250px;
+                    border-radius: 50%;
+                    background-size: cover;
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-66%,-50%);
+                }
+            }
+            .c2{
+                width: 100%;
+                flex-direction: column;
+                .content{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    flex-wrap:wrap ;
+                    text-align: center;
+                    padding: 20px;
+                    .about{
+                        margin: auto;
+                        margin-top: 30px;
+                    }
+                }
+            }
+            .icon{
+                flex-direction: row;
+                justify-content: space-evenly;
+                width: 100%;
+                margin: 20px;
+            }
+        }
+        @media (min-width:300px) and (max-width:400px) {
+            .c1{
+                margin-top: 10px;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;           
+            }
+            .c1::after{
+                width: 250px;
+                height: 250px;
+            }
+        }
+    }
+    @media (min-width:400px) and (max-width:520px) {
+    .h1_name{
+        font-size: 25px;
+    }
     }
     .sun{
         position: absolute;
         right: 0;
         top: 0;
     }
+    @media (min-width:300px) {
+        .h1_name{
+            font-size: 20px;
+        }
+        .conter_h2{
+            font-size: 15px;
+        }
+    }
+
     </style>
 </head>
 <body>
 <div class="c1"></div>
-<div class="c2 w-1/2 mr-10">
-    <div class="content mr-32">
+<div class="c2 xl:w-1/2 lg:w-1/2  xl:mr-10 lg:mr-10">
+    <div class="content">
         <h1 class="uppercase xl:text-[45px] lg:text-[40px] md:text-[35px] sm:[30px] font-bold text-white h1_name"><span class="name">I'M Mohamed Hanafi.</span> <br>
             FRONT END DEVELOPER</h1>
-            <h2 class="text-white conter_h2 w-[70%] mt-10 text-[18px]">
+            <h2 class="text-white conter_h2 xl:w-[70%] lg:w-[70%] w-[100%] mt-10 text-[18px]">
                 I am an Egyptian front-end developer. I'm 19 years old. I study as a teacher at the
                 Advanced Military Technical School in Alexandria. Don't forget to see more of my work.
             </h2>
@@ -277,7 +344,7 @@
                 <span class="fa-solid fa-arrow-right arrow  text-white w-[30px]  rounded-[50%] mr-[-6px]"></span>
         </a>
     </div>
-    <div class="icon w-1/4">
+    <div class="icon xl:w-1/4 lg:w-1/4 w-1/4">
         <a href="./index.html" class="a_icon" data-text="HOME"><span class="fa-solid fa-house ico1 text-white ico"></span></a>
         <a href="https://www.facebook.com/prince.ieee.802.11?mibextid=ZbWKwL" class="a_icon" data-text="facebook"><span class="fa-brands fa-facebook ico2 ico" ></span></a>
         <a href="https://wa.me/201273059762" class="a_icon" data-text="Whats App"><span class="fa-brands fa-whatsapp ico3 ico" ></span></a>
