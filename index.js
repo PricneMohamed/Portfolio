@@ -27,3 +27,16 @@ sun.addEventListener("click", function () {
     light = 0;
   }
 });
+
+let sp_text = "I'M Mohamed Hanafi.";
+let span = document.querySelector(".name")
+let index = 1
+
+function reWrite(){
+  let reSpan = sp_text.slice(0,index)
+  span.innerHTML = `${reSpan} |`
+  index++
+}
+
+setInterval(reWrite,200)
+
