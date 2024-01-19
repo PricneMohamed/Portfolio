@@ -172,6 +172,19 @@
                 display: none;
             }
     }
+    @media(min-width:1000px) and (max-width:1024px){
+        .c2{
+            justify-content: space-between;
+            width: 58%;
+        }
+        .content{
+            justify-content: center;
+            width: 50%;
+            .h1_name{
+                font-size: 26px;
+            }
+        }
+    }
         @media (max-width:1000px) {
             body{
                 flex-direction: column;
@@ -305,6 +318,26 @@
                 height: 250px;
             }
         }
+        .content .h1_name{
+            font-size: 18px;
+            margin: auto;
+        }
+        @media (min-width:300px) and (max-width:360px) {
+            .c1{
+                margin-top: 10px;
+                width: 300px;
+                height: 300px;
+                border-radius: 50%;           
+            }
+            .c1::after{
+                width: 250px;
+                height: 250px;
+            }
+        }
+        .content .h1_name{
+            font-size: 16px;
+            margin: auto;
+        }
     }
     @media (min-width:400px) and (max-width:520px) {
     .h1_name{
@@ -329,8 +362,8 @@
 </head>
 <body>
 <div class="c1"></div>
-<div class="c2 xl:w-1/2 lg:w-1/2  xl:mr-10 lg:mr-10">
-    <div class="content">
+<div class="c2 xl:w-1/2 lg:w-1/2 xl:mr-10 lg:mr-10">
+    <div class="content md:mr-20">
         <h1 class="uppercase xl:text-[45px] lg:text-[40px] md:text-[35px] sm:[30px] font-bold text-white h1_name"><span class="name">I'M Mohamed Hanafi.</span> <br>
             FRONT END DEVELOPER</h1>
             <h2 class="text-white conter_h2 xl:w-[70%] lg:w-[70%] w-[100%] mt-10 text-[18px]">
@@ -344,7 +377,7 @@
                 <span class="fa-solid fa-arrow-right arrow  text-white w-[30px]  rounded-[50%] mr-[-6px]"></span>
         </a>
     </div>
-    <div class="icon xl:w-1/4 lg:w-1/4 w-1/4">
+    <div class="icon xl:w-1/4 lg:w-1/4 ">
         <a href="./index.html" class="a_icon" data-text="HOME"><span class="fa-solid fa-house ico1 text-white ico"></span></a>
         <a href="https://www.facebook.com/prince.ieee.802.11?mibextid=ZbWKwL" class="a_icon" data-text="facebook"><span class="fa-brands fa-facebook ico2 ico" ></span></a>
         <a href="https://wa.me/201273059762" class="a_icon" data-text="Whats App"><span class="fa-brands fa-whatsapp ico3 ico" ></span></a>
